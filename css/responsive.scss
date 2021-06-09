@@ -1,0 +1,805 @@
+// RESPONSIVE PAGE 1920PX AND LESS
+@media (max-width: 1920px) {
+  .padding {
+    padding-right: 374.5px;
+    padding-left: 375.5px;
+  }
+  .sign-up-container {
+    padding-left: 200px;
+  }
+}
+
+// RESPONSIVE PAGE 1680PX AND LESS
+@media (max-width: 1680px) {
+  .padding {
+    padding-right: 254.5px;
+    padding-left: 255.5px;
+  }
+  .sign-up-container {
+    padding-left: 100px;
+  }
+}
+
+// RESPONSIVE PAGE 1550px AND LESS
+@media (max-width: 1550px) {
+  .padding {
+    padding-right: 174px;
+    padding-left: 175px;
+  }
+  .sign-up-container {
+    padding-left: 75px;
+  }
+}
+
+// RESPONSIVE PAGE 1440PX AND LESS
+@media (max-width: 1440px) {
+  .padding {
+    padding-right: 134.5px;
+    padding-left: 135.5px;
+  }
+  .sign-up-container {
+    padding-left: 50px;
+  }
+}
+
+// RESPONSIVE PAGE 1024PX AND LESS
+@media (max-width: 1024px) {
+  .padding {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .sign-up-container {
+    padding-left: 5px;
+  }
+  header {
+    .navigation {
+      li {
+        margin-left: 30px;
+        &:last-child {
+          a {
+            margin-left: 30px;
+          }
+          .button {
+            margin-left: 30px;
+          }
+          .button:after {
+            left: -15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE PAGE 768PX AND LESS
+@media (max-width: 768px) {
+  .padding {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  header {
+    height: 75px;
+    .header-logo {
+      z-index: 150;
+    }
+    .user-res {
+      display: initial;
+    }
+    .navigation {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      min-height: 100vh;
+      background: #fff;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 144px;
+      transition: 0.3s;
+      z-index: 140;
+      li {
+        margin-left: 100px;
+        margin-bottom: 20px;
+        a {
+          text-transform: uppercase;
+        }
+        &:last-child {
+          margin-left: 100px;
+          .user {
+            display: none;
+          }
+          .sign-out {
+            display: initial;
+            margin-left: 0px;
+          }
+          a {
+            margin-left: 10px;
+          }
+          .button {
+            margin-left: 40px;
+            display: none;
+          }
+          .button:after {
+            display: none;
+          }
+        }
+      }
+    }
+    .navigation.active {
+      left: 0%;
+    }
+  }
+  .chat-box,
+  .call-now {
+    display: none;
+  }
+
+  .header-res {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    z-index: 100;
+    a,
+    p {
+      cursor: pointer;
+    }
+  }
+
+  .banner-home {
+    .content {
+      padding: 0px 100px;
+      width: 100%;
+      .title {
+        font-size: 24px;
+        br {
+          display: none;
+        }
+      }
+      .description {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  // UTILITIES HOME
+  // UTILITIES HOME
+  .utilities-home {
+    .utilities-box,
+    .utilities-box.active {
+      flex-direction: column-reverse;
+      > .image-box {
+        width: 100%;
+        margin-top: 30px;
+      }
+      > .content {
+        width: 100%;
+        > .main-title {
+          text-align: center;
+        }
+        > .description {
+          text-align: center;
+        }
+      }
+      &:last-child {
+        > .image-box {
+          margin-top: 67px;
+        }
+        > .content {
+          > .main-title {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .utilities-box.active-2 {
+      height: 100%;
+      flex-direction: column-reverse;
+      > p {
+        display: none;
+      }
+      > .image-box {
+        width: 100%;
+        margin-top: 50px;
+      }
+      > .content {
+        width: 100%;
+        padding-left: 100px;
+        > .main-title {
+          text-align: left;
+        }
+        .description {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .utilities-list {
+    .item {
+      align-items: flex-start;
+      > .content {
+        width: calc(100% - 40px);
+        .description {
+          text-align: left;
+          max-height: 100px;
+        }
+      }
+    }
+  }
+
+  // PRICE LIST
+  .price-list-container {
+    padding-top: 120px;
+    > .content-main {
+      text-align: center;
+      width: 100%;
+      > .description {
+        max-height: 100px;
+        text-align: center;
+      }
+    }
+    .price-list {
+      flex-direction: column;
+      .price-box {
+        width: 100%;
+        margin-bottom: 30px;
+        .utilities-list {
+          display: none;
+        }
+      }
+      .price-box.active {
+        .utilities-list {
+          display: inherit;
+        }
+      }
+    }
+  }
+
+  // SIGN UP HOME
+  .sign-up-container {
+    flex-direction: column-reverse;
+    height: 100%;
+    padding-left: 50px;
+    .image-box {
+      width: 100%;
+      margin-top: 30px;
+    }
+    .sign-up-form {
+      width: 100%;
+      padding: 0px 0px 0px 50px;
+      margin-top: 30px;
+    }
+  }
+
+  // ARTICLES HOME
+
+  .articles-home {
+    margin-top: 50px;
+    .article-box {
+      .article {
+        &:nth-child(1),
+        &:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .article-box {
+    .article {
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 30px;
+      .image-box {
+        height: 250px;
+      }
+      .content {
+        .description {
+          display: initial;
+        }
+      }
+    }
+  }
+
+  // EVALUATE HOME
+  .evaluate-home {
+    .evaluate-box {
+      height: 100%;
+      background: none;
+      .evaluate-list {
+        padding: 0px 100px;
+        width: 100%;
+        .evaluate {
+          padding-bottom: 20px;
+          width: 100%;
+          &:nth-child(2),
+          &:nth-child(3) {
+            display: none;
+          }
+          img {
+            &:nth-child(2) {
+              top: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    margin-bottom: 70px;
+    .logo-footer {
+      width: 100%;
+      margin-top: 30px;
+      align-items: center;
+      .footer-logo {
+        img {
+          height: 92px;
+          width: 92px;
+        }
+        p {
+          font-size: 40px;
+        }
+      }
+      .sign-up-footer {
+        width: 100%;
+      }
+    }
+    .contact-footer.active {
+      display: initial;
+    }
+    .categories,
+    .articles-footer,
+    .contact-footer.active {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .contact-footer {
+      display: none;
+    }
+    .reserved-res {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
+    }
+  }
+
+  // UTILITIES PAGE
+  .banner-utilities {
+    img {
+      filter: brightness(75%);
+    }
+    .content {
+      background: transparent;
+      border-radius: 0px;
+      box-shadow: none;
+      width: 100%;
+      .title span,
+      .description {
+        color: #fff;
+      }
+    }
+  }
+
+  .utilities-page {
+    padding-top: 120px;
+    padding-left: 0px;
+    padding-right: 0px;
+    .utility,
+    .utility.active {
+      flex-direction: column;
+      margin-bottom: 30px;
+      padding: 30px 100px;
+      .image-box {
+        width: 100%;
+        img {
+          border-radius: 4px;
+        }
+      }
+      .content {
+        width: 100%;
+        padding-bottom: 30px;
+        .title {
+          text-align: center;
+          margin-top: 20px;
+        }
+        .description {
+          margin-top: 10px;
+          max-height: 100px;
+        }
+      }
+    }
+    .utility.active {
+      background: #f7fdff;
+    }
+  }
+
+  // ARTICLE DETAILS PAGE
+  .article-details-page {
+    flex-direction: column;
+    padding-bottom: 0px;
+    .details,
+    .articles-related {
+      width: 100%;
+    }
+    .articles-related {
+      .list-item {
+        .item {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  // CONTACT PAGE
+  .contact-page {
+    .contact-box {
+      flex-direction: column-reverse;
+      box-shadow: none;
+      background: transparent;
+      .content {
+        width: 100%;
+        margin-top: 30px;
+        padding: 0px;
+        .main-title,
+        .title {
+          display: none;
+        }
+        .title-2 {
+          text-align: center;
+        }
+      }
+      .image-box {
+        width: 100%;
+        overflow: hidden;
+        .title,
+        .description {
+          display: block;
+          text-align: center;
+        }
+        .description {
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .sign-up-container.active {
+    min-height: 130vh;
+  }
+}
+
+// RESPONSIVE PAGE 540PX AND LESS
+@media (max-width: 540px) {
+  .padding {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .navigation.active {
+    li {
+      margin-left: 40px;
+      &:last-child {
+        margin-left: 40px;
+      }
+    }
+  }
+  .banner-home {
+    .content {
+      padding: 0px 40px;
+    }
+  }
+  .utilities-home {
+    .utilities-box.active-2 {
+      > .content {
+        padding-left: 40px;
+      }
+    }
+  }
+  .sign-up-container {
+    .sign-up-form {
+      padding-left: 0px;
+    }
+  }
+  .sign-up-container.active {
+    min-height: 135vh;
+  }
+  .evaluate-home {
+    .evaluate-box {
+      .evaluate-list {
+        padding: 0px 40px;
+      }
+    }
+  }
+  footer {
+    .logo-footer {
+      margin-top: 0px;
+      .footer-logo {
+        transform: scale(0.8);
+      }
+    }
+  }
+  .contact-page {
+    padding-bottom: 0px;
+    .contact-box {
+      .content {
+        .title-2 {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .utilities-page {
+    padding-left: 0px;
+    padding-right: 0px;
+    .utility,
+    .utility.active {
+      padding: 30px 40px;
+    }
+  }
+  .sign-in-page,
+  .sign-up-page {
+    min-height: 120vh;
+    > img {
+      object-fit: cover;
+      object-position: 100% 100%;
+    }
+    .page-logo {
+      transform: scale(0.85);
+    }
+    form {
+      padding-left: 17.5px;
+      padding-right: 17.5px;
+    }
+  }
+}
+
+// RESPONSIVE PAGE 375PX AND LESS
+@media (max-width: 375px) {
+  .padding {
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+  }
+  .navigation.active {
+    li {
+      margin-left: 17.5px;
+      &:last-child {
+        margin-left: 17.5px;
+      }
+    }
+  }
+  .main-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .banner-home {
+    height: 300px;
+    img {
+      object-fit: cover;
+      object-position: 0% 100%;
+    }
+    .content {
+      position: relative;
+      top: 20px;
+      padding: 0px 17.5px;
+      .title {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      .description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .button {
+        margin-top: 20px;
+        height: 40px;
+        width: 160px;
+        line-height: 40px;
+      }
+    }
+  }
+  .utilities-home {
+    .utilities-box {
+      > .image-box {
+        height: 250px;
+      }
+      .content {
+        .why-choose-gpp {
+          .why-choose-box {
+            > p {
+              text-align: center;
+            }
+          }
+        }
+      }
+      &:last-child {
+        > .image-box {
+          height: 180px;
+        }
+      }
+    }
+    .utilities-box.active-2 {
+      > .content {
+        padding-left: 17.5px;
+      }
+      > .image-box {
+        height: 300px;
+      }
+    }
+  }
+  .utilities-list {
+    .item {
+      > .content {
+        .title {
+          font-size: 14px;
+          line-height: 16px;
+          color: #444;
+        }
+      }
+    }
+  }
+  .price-list-container {
+    .price-list {
+      .price-box {
+        > .content-box {
+          padding-left: 20px;
+          .image-box {
+            width: 70px;
+            height: 70px;
+          }
+          .content {
+            p {
+              &:nth-child(2) {
+                margin-top: 10px;
+                font-size: 24px;
+                line-height: 25px;
+              }
+              &:nth-child(3) {
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+        .utilities-list {
+          .item {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  .sign-up-container {
+    padding-top: 0px;
+    .sign-up-form {
+      padding-left: 0px;
+    }
+  }
+  .sign-up-container.active {
+    margin-top: 70px;
+    padding-top: 30px;
+  }
+  .articles-home {
+    padding-top: 0px;
+  }
+  .evaluate-home {
+    margin-top: 30px;
+    .evaluate-box {
+      .evaluate-list {
+        padding: 0px 17.5px;
+      }
+    }
+  }
+  .contact-page {
+    padding-bottom: 0px;
+    .contact-box {
+      .content {
+        .title-2 {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .banner-utilities {
+    height: 300px;
+    img {
+      object-fit: cover;
+      object-position: 100% 100%;
+      filter: brightness(75%);
+    }
+    .content {
+      padding: 0px;
+      .title {
+        font-size: 14px;
+        line-height: 25px;
+        height: 25px;
+        text-align: center;
+      }
+      .description {
+        line-height: 20px;
+        margin-top: 10px;
+      }
+      .button {
+        width: 270px;
+      }
+    }
+  }
+  .utilities-page {
+    padding-left: 0px;
+    padding-right: 0px;
+    .utility,
+    .utility.active {
+      padding: 30px 17.5px;
+    }
+  }
+  .article-page {
+    margin-bottom: 0px;
+    .article-box {
+      .article {
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .sign-in-page,
+  .sign-up-page {
+    justify-content: flex-start;
+    min-height: 125vh;
+    padding-top: 100px;
+    .page-logo {
+      transform: scale(0.85);
+    }
+    form {
+      input[type="submit"] {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// RESPONSIVE PAGE 320PX AND LESS
+@media (max-width: 320px) {
+  footer {
+    .logo-footer {
+      .footer-logo {
+        transform: scale(0.6);
+      }
+    }
+  }
+  .sign-in-page,
+  .sign-up-page {
+    min-height: 150vh;
+    .page-logo {
+      transform: scale(0.5);
+    }
+    form {
+      width: 290px;
+      input[type="submit"] {
+        width: 250px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    p {
+      display: inline-block;
+      width: 250px;
+    }
+  }
+}

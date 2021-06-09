@@ -114,6 +114,9 @@ header {
       }
     }
   }
+  .user-res {
+    display: none;
+  }
   .navigation {
     height: 30px;
     li {
@@ -127,7 +130,7 @@ header {
         font-weight: bold;
       }
       &:last-child {
-        margin-left: 22px;
+        margin-left: 0px;
         .user {
           position: relative;
           width: 100px;
@@ -137,10 +140,14 @@ header {
           padding-right: 25px;
           color: #fff;
           cursor: pointer;
+          margin-left: 22px;
           img {
             position: relative;
             left: -3px;
           }
+        }
+        .sign-out {
+          display: none;
         }
         a {
           margin-left: 50px;
@@ -163,6 +170,45 @@ header {
       }
     }
   }
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  img {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.call-now {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  padding: 0px 15px;
+  height: 40px;
+  background: $mainColor;
+  border-radius: 25px;
+  z-index: 90;
+  cursor: pointer;
+  p {
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.header-res {
+  display: none;
 }
 
 // BANNER HOME
@@ -446,6 +492,11 @@ header {
     }
   }
 }
+.sign-up-container.active {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
 
 .article-box {
   flex-wrap: wrap;
@@ -690,6 +741,12 @@ footer {
   .contact-footer {
     width: 31%;
   }
+  .contact-footer.active {
+    display: none;
+  }
+  .reserved-res {
+    display: none;
+  }
 }
 
 //                                     UTILITIES PAGE
@@ -791,6 +848,30 @@ footer {
         }
       }
     }
+    .pagination {
+      width: 100%;
+      min-height: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      li {
+        list-style: none;
+        margin: 0px 15px 0px 0px;
+        cursor: pointer;
+        p {
+          width: 15px;
+          height: 100%;
+          text-align: center;
+          border-radius: 7.5px;
+          color: #000;
+        }
+      }
+      .active {
+        p {
+          background: $mainColor;
+          color: #fff;
+        }
+      }
+    }
   }
 }
 
@@ -854,6 +935,10 @@ footer {
     .image-box {
       width: 57%;
       height: 450px;
+      .title,
+      .description {
+        display: none;
+      }
       img {
         width: 100%;
         height: 100%;
@@ -863,7 +948,8 @@ footer {
 }
 
 //                                                      SIGN IN PAGE
-.sign-in-page {
+.sign-in-page,
+.sign-up-page {
   position: relative;
   justify-content: center;
   flex-direction: column;
@@ -900,6 +986,7 @@ footer {
         cursor: pointer;
       }
     }
+    input[type="text"],
     input[type="email"],
     input[type="password"] {
       width: 100%;
@@ -922,6 +1009,7 @@ footer {
       color: #fff;
     }
     .save-user {
+      margin-bottom: 20px;
       input {
         position: relative;
         margin-right: 10px;
@@ -954,7 +1042,7 @@ footer {
       }
     }
     input[type="submit"] {
-      margin-top: 30px;
+      margin-top: 10px;
       height: 40px;
       width: 100%;
       background: #f8676e;
@@ -997,81 +1085,9 @@ footer {
     position: absolute;
     color: #fff;
     bottom: 30px;
+    text-align: center;
     a {
       color: #fff;
-    }
-  }
-}
-
-//                                                 SIGN UP PAGE
-.sign-up-page {
-  position: relative;
-  top: 70px;
-  width: 100%;
-  height: calc(100vh - 70px);
-  background: #f1f9ff;
-  padding-left: 75px;
-  padding-top: 80px;
-  .image-box {
-    position: absolute;
-    bottom: 0;
-    width: 44%;
-    height: 650px;
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .content {
-    position: relative;
-    left: 100%;
-    transform: translateX(-100%);
-    width: 45%;
-    .title {
-      font-size: 24px;
-      line-height: 36px;
-    }
-    .description {
-      margin-top: 20px;
-    }
-    form {
-      input {
-        margin-top: 20px;
-        width: 100%;
-        height: 50px;
-        padding-left: 30px;
-        border: none;
-        background: #fff;
-        border-radius: 8px;
-        outline-color: $mainColor;
-      }
-      div {
-        position: relative;
-        width: 170px;
-        height: 50px;
-        margin-top: 20px;
-        background: $mainColor;
-        border-radius: 25px;
-        justify-content: center;
-        cursor: pointer;
-        input[type="submit"] {
-          position: absolute;
-          top: 0;
-          left: -10px;
-          padding: 0;
-          margin-top: 0px;
-          text-align: center;
-          color: #fff;
-          font-weight: bold;
-          border-radius: 25px;
-          background: transparent;
-          cursor: pointer;
-        }
-        img {
-          position: relative;
-          left: 30px;
-        }
-      }
     }
   }
 }

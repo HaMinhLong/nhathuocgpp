@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
     <header class="padding flex">
@@ -13,6 +14,9 @@
         <img src="./images/home/logo.svg" alt="" />
         <p>NhaThuoc<span>GPP</span></p>
       </div>
+      <a href="#" class="user-res">
+        <img src="./images/home/user-res.svg" alt="" />
+      </a>
       <ul class="navigation flex">
         <li><a href="./index.html" class="active">Trang chủ</a></li>
         <li><a href="./Utilities.html">Tính năng</a></li>
@@ -24,11 +28,32 @@
             <img src="./images/home/user.svg" alt="" />
             <p>Nguyễn</p>
           </div> -->
+          <a href="./SignIn.html" class="sign-out">
+            <img src="./images/home/sign-out.svg" alt="" />
+          </a>
           <a href="./SignIn.html">Đăng nhập</a>
           <a href="./SignUp.html" class="button">Đăng ký</a>
         </li>
       </ul>
     </header>
+
+    <section class="header-res padding flex">
+      <a class="home-icon" href="./index.html">
+        <img src="./images/home/home.svg" alt="" />
+      </a>
+      <a class="add-user-icon" href="./SignUpGPP.html">
+        <img src="./images/home/add-user .svg" alt="" />
+      </a>
+      <a class="phone-call-icon" href="./Contact.html">
+        <img src="./images/home/phone-call.svg" alt="" />
+      </a>
+      <a class="chat-icon" href="#">
+        <img src="./images/home/chat.svg" alt="" />
+      </a>
+      <p class="nav-icon" onclick="toggleNav()">
+        <img src="./images/home/nav-icon.svg" alt="" />
+      </p>
+    </section>
 
     <section class="contact-page padding">
       <div class="contact-box flex">
@@ -37,7 +62,7 @@
           <p class="title">
             Bạn muốn tìm giải pháp tối ưu nhất? Liên hệ ngay với chúng tôi
           </p>
-          <div class="contact-footer">
+          <div class="contact">
             <div class="address flex">
               <img src="./images/home/address.svg" alt="" />
               <p>Tòa nhà Vinahud, đường trung yên 9, Trung Hòa, Cầu giấy</p>
@@ -56,6 +81,10 @@
           </p>
         </div>
         <div class="image-box">
+          <p class="title">Thông tin <span>Liên hệ</span></p>
+          <p class="description">
+            Bạn muốn tìm giải pháp tối ưu nhất? Liên hệ ngay với chúng tôi
+          </p>
           <img src="./images/contact/map.png" alt="" />
         </div>
       </div>
@@ -73,6 +102,21 @@
             <input type="text" placeholder="Email*" />
             <img src="./images/home/mail-footer.svg" alt="" />
           </form>
+        </div>
+      </div>
+      <div class="contact-footer active">
+        <p>Thông tin liên hệ</p>
+        <div class="address flex">
+          <img src="./images/home/address.svg" alt="" />
+          <p>Tòa nhà Vinahud, đường trung yên 9, Trung Hòa, Cầu giấy</p>
+        </div>
+        <div class="email flex">
+          <img src="./images/home/mail-footer.svg" alt="" />
+          <p>contact.nhathuocgpp@gmail.com</p>
+        </div>
+        <div class="phone flex">
+          <img src="./images/home/phone.svg" alt="" />
+          <p>+8423456789</p>
         </div>
       </div>
       <div class="categories">
@@ -141,6 +185,13 @@
           <p>+8423456789</p>
         </div>
       </div>
+      <p class="reserved-res">
+        © 2020 nhathuocgpp.com.vn. All Rights Reserved. Develop by
+        <a href="https://vgasoft.vn/">VGA SOFT</a>
+        Design
+      </p>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
